@@ -18,6 +18,8 @@ Pärast Anaconda installimist laadi alla ja paki kuhugi kausta lahti käesolev r
 
 Seejärel leia ja ava käsurea kaudu nn Anaconda Prompt.
 
+![anaconda_prompt](img/anaconda_prompt.png)
+
 Liigu käsu `cd` abil kausta, kuhu pakkisid eelnevalt lahti GitHubist alla laaditud ZIP faili.
 
 `cd C:\Users\Holger\mcarto2023-main\mcarto2023-main`
