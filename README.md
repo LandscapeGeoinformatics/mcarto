@@ -24,7 +24,7 @@ Liigu käsu `cd` abil kausta, kuhu pakkisid eelnevalt lahti GitHubist alla laadi
 
 `cd C:\Users\Holger\mcarto2023-main\mcarto2023-main`
 
-Käsu `ls` abil peaks nähtavale tulema kausta sisu, sh praktikumis kasutatavad Jupyteri töövihikud.
+Käsu `ls` (Windowsis ka käsk `dir`) abil peaks nähtavale tulema kausta sisu, sh praktikumis kasutatavad Jupyteri töövihikud.
 
 ![folder](img/folder.png)
 
