@@ -14,7 +14,7 @@ Pärast Anaconda installimist laadi alla ja paki kuhugi kausta lahti käesolev r
 
 `Code -> Download ZIP`
 
-![download_zip](img/download_zip.PNG)-->
+![download_zip](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/download_zip.png)-->
 
 Seejärel leia ja ava nn Anaconda Prompt. Loo uus Anaconda keskkond, mille Pythoni versioon on 3.6.
 
