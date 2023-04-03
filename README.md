@@ -42,7 +42,7 @@ Before we start Python coding we will make our newly created conda Python enviro
 
 `python -m ipykernel install --user --name mcarto2023`
 
-![install_kernel](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/install_kernel.png)
+![install_kernel](img/install_kernel.png)
 
 Lõpuks aktiveeri Jupyteri keskkond.
 
