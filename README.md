@@ -49,3 +49,5 @@ Lõpuks aktiveeri Jupyteri keskkond.
 `jupyter lab`
 
 Avaneb brauser, kus klõps failil laiendiga *.ipynb* avab vastava töövihiku, mida saab brauseri aknas kasutama hakata.
+
+![browser](img/browser.png)
