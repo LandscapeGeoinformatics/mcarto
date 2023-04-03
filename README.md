@@ -14,27 +14,35 @@ Pärast Anaconda installimist laadi alla ja paki kuhugi kausta lahti käesolev r
 
 `Code -> Download ZIP`
 
-![download_zip](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/download_zip.png)-->
+![download_zip](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/download_zip.png)
 
-Seejärel leia ja ava nn Anaconda Prompt. Loo uus Anaconda keskkond, mille Pythoni versioon on 3.6.
+Seejärel leia ja ava käsurea kaudu nn Anaconda Prompt.
 
-`conda create --name mcarto python=3.6`
+Liigu käsu `cd` abil kausta, kuhu pakkisid eelnevalt lahti GitHubist alla laaditud ZIP faili.
 
-<img src="https://raw.githubusercontent.com/LandscapeGeoinformatics/mcarto/main/img/create_env.PNG" height="150">
+`cd C:\Users\Holger\mcarto2023-main\mcarto2023-main`
+
+Käsu `ls` abil peaks nähtavale tulema kausta sisu, sh praktikumis kasutatavad Jupyteri töövihikud.
+
+![folder](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/folder.png)
+
+Alustuseks loome Anaconda keskkonna nimega `mcarto2023` ning installime sellesse `cartopy` ja `jupyterlab` teegid, mida kasutame praktikumi ülesannetes. Parameeter `-c conda-forge` määrab Pythoni teekide lähtekanaliks [conda-forge](https://conda-forge.org/) repositooriumi.
+
+`conda create -n mcarto2023 -c conda-forge cartopy jupyterlab`
+
+![create_env](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/create_env.png)
 
 Järgmine rida aktiveerib äsjaloodud keskkonna.
 
-`activate mcarto`
+`conda activate mcarto2023`
 
-<img src="https://raw.githubusercontent.com/LandscapeGeoinformatics/mcarto/main/img/activate_env.PNG" height="150">
+![activate_env](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/activate_env.png)
 
-Nüüd tuleks installida vajalikud Pythoni teegid (Jupyter ja Cartopy). Mõlema puhul tulevad kaasa ka mitmed muud teegid, sh Cartopy (`conda install cartopy`) puhul [Matplotlib](https://matplotlib.org/), millele see tugineb.
+Before we start Python coding we will make our newly created conda Python environment known to the Jupyter notebook system by installing the kernel, basically the execution engine link from Jupyter web notebook to our Python environment.
 
-<img src="https://raw.githubusercontent.com/LandscapeGeoinformatics/mcarto/main/img/conda_install.PNG" height="150">
+`python -m ipykernel install --user --name mcarto2023`
 
-Järgnevalt määra aktiivseks kaustaks see, kuhu sai eelnevalt lahti pakitud antud GitHubi repositoorium.
-
-`cd C:\Users\Holger\mcarto-main\mcarto-main`
+![install_kernel](https://github.com/LandscapeGeoinformatics/mcarto2023/blob/main/img/install_kernel.png)
 
 Lõpuks aktiveeri Jupyteri keskkond.
 
