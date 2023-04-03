@@ -38,7 +38,7 @@ Järgmine rida aktiveerib äsjaloodud keskkonna.
 
 ![activate_env](img/activate_env.png)
 
-Before we start Python coding we will make our newly created conda Python environment known to the Jupyter notebook system by installing the kernel, basically the execution engine link from Jupyter web notebook to our Python environment.
+Enne harjutuste kallale asumist installime veel nn Jupyteri kerneli ehk anname Jupyteri töövihikutele teada, et soovime nende jooksutamisel kasutada vastloodud `mcarto2023` keskkonda.
 
 `python -m ipykernel install --user --name mcarto2023`
 
