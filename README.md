@@ -16,7 +16,7 @@ Pärast Micromamba installimist laadi alla ja paki kuhugi kausta lahti käesolev
 
 `Code -> Download ZIP`
 
-![download_zip](img/download_zip.png style="width:60%")
+![download_zip](img/download_zip.png)
 
 Seejärel leia ja ava käsurea kaudu Windows PowerShell.
 
@@ -24,34 +24,46 @@ Seejärel leia ja ava käsurea kaudu Windows PowerShell.
 
 Liigu käsu `cd` abil kausta, kuhu pakkisid eelnevalt lahti GitHubist alla laaditud ZIP faili.
 
-`cd C:\Users\Holger\mcarto-main\mcarto-main`
+```
+cd C:\Users\Holger\mcarto-main\mcarto-main
+```
 
 Käsu `ls` (Windowsis ka käsk `dir`) abil peaks nähtavale tulema kausta sisu, sh praktikumis kasutatavad Jupyteri töövihikud.
 
 ![folder](img/folder.png)
 
-Alustuseks loome keskkonna nimega `mcarto2025` ning installime sellesse `cartopy` ja `jupyterlab` teegid, mida kasutame praktikumi ülesannetes. Parameeter `-c conda-forge` määrab Pythoni teekide lähtekanaliks [conda-forge](https://conda-forge.org/) repositooriumi.
+Alustuseks loome keskkonna nimega `mcarto` ning installime sellesse `cartopy` ja `jupyterlab` teegid, mida kasutame praktikumi ülesannetes. Parameeter `-c conda-forge` määrab Pythoni teekide lähtekanaliks [conda-forge](https://conda-forge.org/) repositooriumi.
 
-`micromamba create -n mcarto2025 -c conda-forge cartopy jupyterlab`
+```
+micromamba create -n mcarto -c conda-forge cartopy jupyterlab
+```
 
 ![create_env](img/create_env.png)
 
 Järgmine rida aktiveerib äsjaloodud keskkonna.
 
-`micromamba activate mcarto2025`
+```
+micromamba activate mcarto
+```
 
 ![activate_env](img/activate_env.png)
 
-Enne harjutuste kallale asumist installime veel nn Jupyteri kerneli ehk anname Jupyteri töövihikutele teada, et soovime nende jooksutamisel kasutada vastloodud `mcarto2025` keskkonda.
+Enne harjutuste kallale asumist installime veel nn Jupyteri kerneli ehk anname Jupyteri töövihikutele teada, et soovime nende jooksutamisel kasutada vastloodud `mcarto` keskkonda.
 
-`python -m ipykernel install --user --name mcarto2025`
+```
+python -m ipykernel install --user --name mcarto
+```
 
 ![install_kernel](img/install_kernel.png)
 
 Lõpuks aktiveeri Jupyteri keskkond.
 
-`jupyter lab`
+```
+jupyter lab
+```
 
 Avaneb brauser, kus klõps failil laiendiga *.ipynb* avab vastava töövihiku, mida saab brauseri aknas kasutama hakata.
+
+Lisaks kontrollime, et aktiivne kernel üleval paremal on vastloodud `mcarto`.
 
 ![browser](img/browser.png)
