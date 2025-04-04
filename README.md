@@ -10,13 +10,13 @@ Teine juhend keskendub täiendavate kaardielementide lisamisele, mille hulka kuu
 
 ## Ettevalmistus
 
-Juhendite kasutamine eeldab [Micromamba](https://conda.io/en/main/miniconda.html) olemasolu, mis peaks olema arvutiklassi arvutites tagatud. Kes soovib seda seadistada oma arvutis, võib selleks kasutada Alex Kmochi vastavat [juhendit](https://kodu.ut.ee/~kmoch/geopython2023/Py_00/Installing_Micromamba.html).
+Juhendite kasutamine eeldab [Micromamba](https://mamba.readthedocs.io/en/latest/) olemasolu, mis peaks olema arvutiklassi arvutites tagatud. Kes soovib seda seadistada oma arvutis, võib selleks kasutada Alex Kmochi vastavat [juhendit](https://kodu.ut.ee/~kmoch/geopython2023/Py_00/Installing_Micromamba.html).
 
 Pärast Micromamba installimist laadi alla ja paki kuhugi kausta lahti käesolev repositoorium koos kõigi failidega.
 
 `Code -> Download ZIP`
 
-![download_zip](img/download_zip.png)
+![download_zip](img/download_zip.png style="width:60%")
 
 Seejärel leia ja ava käsurea kaudu Windows PowerShell.
 
